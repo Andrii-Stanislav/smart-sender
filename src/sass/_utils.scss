@@ -1,0 +1,40 @@
+// Fonts
+$font-primery: 'DM Sans', sans-serif;
+
+// background colors
+$first-bg-color: #FFFFFF;
+$secondary-bg-color:#E5EFFF;
+
+
+// text colors
+$primery-text-color: #1C538A;
+$secondary-text-color: #0351DF;
+
+
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    font-family: $font-primery;
+    color: $primery-text-color;
+    background-color: #FAFAFA;
+  }
+  
+  %link {
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+  }
+  
+  %list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }

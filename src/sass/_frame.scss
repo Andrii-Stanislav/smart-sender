@@ -1,0 +1,93 @@
+.quiz-item-frame {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 48px;
+    width: auto;
+
+    &__svg {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.quiz-item-frame.close {
+    display: none;
+}
+
+.frame__box-primery,
+.frame__box-move {
+    display: flex;
+    // height: 48px;
+    width: auto;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #2F287F;
+}
+
+.frame__box-primery.close {
+    display: none;
+}
+
+.frame__box-move.close {
+    display: none;
+}
+
+
+.frame-button {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+
+    font-size: 13px;
+    line-height: 16px;
+    background-color: inherit;
+    color: #fff;
+
+    .move-svg {
+        margin-right: 6px;
+    }
+
+    &.delete-btn {
+        background-color: #FF0000;
+    }
+
+    &.move-btn {
+        background-color: #00AE09;
+    }
+
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &:hover {
+        background-color:#514AA7;
+    }
+}
+
+.move-input-box {
+    min-width: 77px;
+    margin-right: 8px;
+}
+
+.move-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: -1px;
+}
+
+.move-label {
+    display: inline-block;
+    height: 100%;
+}
+
+.move-input:checked + .move-label {
+    background-color: #514AA7;
+}

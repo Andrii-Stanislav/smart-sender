@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Smart Sender</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-box">
+          <a class="header-logo" href="">
+            <svg width="20" height="28">
+              <use href="./images/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <button class="header-link" id="quiz-menu" >
+            <svg width="20" height="20">
+              <use href="./images/sprite.svg#category"></use>
+            </svg>
+            Мои квизы
+          </button>
+        </div>
+        <button class="header-link mobile-menu" id="mobile-menu">
+          Меню
+        </button>
+        <nav class="main-nav" id="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-items">
+              <a class="header-link" href="">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#edit"></use>
+                </svg>
+                Квиз
+              </a>
+            </li>
+            <li class="main-nav-items">
+              <a class="header-link" href="">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#setting"></use>
+                </svg>
+                Настройки
+              </a>
+            </li>
+            <li class="main-nav-items">
+              <a class="header-link" href="">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#send"></use>
+                </svg>
+                Заявки
+              </a>
+            </li>
+            <li class="main-nav-items">
+              <a class="header-link" href="">
+                <svg width="20" height="20">
+                  <use href="./images/sprite.svg#chart"></use>
+                </svg>
+                Аналитика
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-user-nav">
+          <a class="header-link">
+            <svg width="20" height="20">
+              <use href="./images/sprite.svg#show"></use>
+            </svg>
+            Посмотреть
+          </a>
+          <a class="header-link upgrade-link">
+            <img src="./images/gift.png" width="24px">
+            Upgrade
+          </a>
+          <img src="./images/user.jpg" width="40px">
+        </div>
+      </div>
+    </header>
+
+    <div class="page-container">
+      <aside class="aside" id="aside">
+        <div class="aside-container">
+        <p class="aside-description">СОЗДАНИЕ КВИЗА</p>
+          <ul class="aside-list">
+            <li>
+              <button class="aside-btn">
+                <span>1</span> <div>Стартовая страница</div>
+              </button>
+            </li>
+            <li>
+              <button class="aside-btn">
+                <span>2</span> <div>Вопросы</div> 
+              </button>
+            </li>
+            <li>
+              <button class="aside-btn">
+                <span>3</span> <div>Результаты</div> 
+              </button>
+            </li>
+            <li>
+              <button class="aside-btn">
+                <span>4</span> <div>Форма контактов</div> 
+              </button>
+            </li>
+            <li>
+              <button class="aside-btn">
+                <span>5</span> <div>Скидки, бонусы</div>
+              </button>
+            </li>
+          </ul>
+          <button class="aside-btn-start">
+            <span>
+              <svg width="16" height="16">
+                <use href="./images/sprite.svg#play"></use>
+              </svg>
+            </span>
+            Запустить обучение
+          </button>
+        </div>
+      </aside>
+
+      <main class="main">
+        <ul class="quiz-list" id="quiz-list">
+        </ul>
+
+        <div class="right-sidebar">
+          <div class="consultant">
+            <div class="toggle-box">
+              <span class="consultant-title">Консультант</span>
+              <div class="toggle">
+                <div class="toggle-switch">
+                  <div class="switch__control">
+                    <input class="switch__toggle" type="checkbox" name="toggle" id="switch-toggle-consultant" aria-label="Переключатель" />
+                    <label aria-hidden="true" class="switch__track" for="switch-toggle-consultant"></label>
+                    <div aria-hidden="true" class="switch__marker"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="consultant-form" id="consultant-form">
+              <div class="input-file-box">
+                <label class="input-file-label">
+                  <input class="input-file" type="file" name="logo-load" accept="image/jpeg,image/png,image/gif">
+                  <svg width="20" height="28">
+                    <use href="./images/sprite.svg#image-example"></use>
+                  </svg>
+                </label>
+                <span class="input-file-description">5 mb max</span>
+              </div>
+              <div class="input-container">
+                <input type="text" placeholder="Имя консультанта..." name="name">
+                <input type="text" placeholder="Должность..." name="position">
+              </div>
+            </form>
+          </div>
+          <div class="test-format">
+            <div class="toggle-box">
+              <span class="test-format-title">Формат тестирования <br>Правильно/Неправильно</span>
+              <div class="toggle">
+                <div class="toggle-switch">
+                  <div class="switch__control">
+                    <input class="switch__toggle" type="checkbox" name="toggle" id="switch-toggle-test-format" aria-label="Переключатель" />
+                    <label aria-hidden="true" class="switch__track" for="switch-toggle-test-format"></label>
+                    <div aria-hidden="true" class="switch__marker"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer></footer>
+  </body>
+</html>

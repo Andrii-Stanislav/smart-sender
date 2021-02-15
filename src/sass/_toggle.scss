@@ -1,0 +1,73 @@
+.toggle-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle {
+  display: inline-block;
+}
+
+.toggle-switch {
+  display: flex;
+  align-items: center;
+}
+
+.switch__control {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 37px;
+  //  64px;
+  height: 22px;
+  //  32px;
+  border-radius: 50em;
+  padding: 1px 0;
+}
+
+.switch__toggle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+}
+
+.switch__track {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  user-select: none;
+  background-color: #CACFDB;
+  border-radius: inherit;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.switch__marker {
+  position: relative;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  z-index: 2;
+  pointer-events: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  transform: translateX(1px);
+  transition: transform 250ms linear;
+}
+
+.switch__toggle:checked + .switch__track {
+  background-color: #0351DF;
+}
+
+.switch__toggle:checked ~ .switch__marker {
+  transform: translateX(16px);
+}
